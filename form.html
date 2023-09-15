@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee form</title>
+</head>
+<script>
+    // Function to generate a random color in hexadecimal format
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+  
+    // Function to change the background color
+    function changeBackgroundColor() {
+      document.body.style.backgroundColor = getRandomColor();
+    }
+  
+    // Set an interval to change the background color every 3 seconds (3000 milliseconds)
+    setInterval(changeBackgroundColor, 3000);
+  </script>
+  
+<body>
+    <center>
+    <h1>Employee form</h1>
+    </center>
+    <from>
+        <center>
+        <label>Enter your name:</label>
+        <input type="text"><br><br>
+        <label>Enter your department:</label>
+        <input type="text"><br><br>
+        <lable>Tell me about your self</lable>
+        <textarea></textarea>
+        <p>Do you exercise at home</p>
+        <input type="radio">
+        <lable>yes</label>
+        <input type="radio">
+        <lable>No</lable>
+        <input type="radio"><br><br>
+        <p>How do you likr to read about your favorite topic?</p>
+        <input type="checkbox">
+        <lable>Books</lable>
+        <input type="checkbox">
+        <lable>Online resoruse</lable>
+        <input type="checkbox">
+        <lable>Phoneapps</lable>
+        <input type="checkbox">
+        <lable>Magazine</lable><br><br>
+        <lable>What genre of movies do you like?</lable>
+        <select>
+           <option>horror</option>
+           <option>comedy</option>
+           <option>thrilling</option>
+           <option>love</option>
+
+        </select><br><br>
+    
+    <button type ="submit">submit</button>
+     </center>   
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+    </from>
+    
+</body>
+</html>
